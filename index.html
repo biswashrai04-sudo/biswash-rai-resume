@@ -213,6 +213,13 @@
 
         .name-part {
             display: inline-block;
+            background-size: 300% 100%;
+            animation: gradientShift 4s ease-in-out infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% center; }
+            50% { background-position: 100% center; }
         }
 
         .gradient-text {
